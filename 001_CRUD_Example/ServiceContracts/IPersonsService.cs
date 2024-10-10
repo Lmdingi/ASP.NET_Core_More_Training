@@ -13,7 +13,7 @@ public interface IPersonsService
     /// </summary>
     /// <param name="personAddRequest">Person to add</param>
     /// <returns>The same person details, along with newly generated PersonID</returns>
-    PersonResponse AddPerson(PersonAddRequest? personAddRequest);
+    Task<PersonResponse> AddPerson(PersonAddRequest? personAddRequest);
 
     /// <summary>
     /// Returns all persons
@@ -59,4 +59,16 @@ public interface IPersonsService
     /// <param name="PersonID">id of Person to delete</param>
     /// <returns>true, if the deletion is successful; otherwise false</returns>
     bool DeletePerson(Guid? PersonID);
+
+    /// <summary>
+    /// gets persons as CSV
+    /// </summary>
+    /// <returns>the memory stream with csv</returns>
+    Task<MemoryStream> GetPersonsCSV();
+
+    /// <summary>
+    /// gets persons as excel
+    /// </summary>
+    /// <returns>the memory stream with excel</returns>
+    Task<MemoryStream> GetPersonsExcel();
 }
