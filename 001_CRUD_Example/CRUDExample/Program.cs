@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Serilog;
 using ServiceContracts;
 using Services;
+using CRUDExample.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,11 +36,17 @@ builder.Services.AddDbContext<PersonsDbContext>(options =>
 //ConnectionString = "Server=localhost\\SQLEXPRESS;Database=PersonsDatabase;Trusted_Connection=True;TrustServerCertificate=True";
 
 var app = builder.Build();
-app.UseSerilogRequestLogging();
+
 if (builder.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
 }
+else 
+{
+    app.UseExceptionHandler();
+}
+
+app.UseSerilogRequestLogging();
 
 //app.UseHttpLogging();
 

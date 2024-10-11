@@ -1,3 +1,4 @@
+using CRUDExample.Filters.ActionFilters;
 using Microsoft.AspNetCore.Mvc;
 using Rotativa.AspNetCore;
 using ServiceContracts;
@@ -26,6 +27,7 @@ namespace CRUDExample.Controllers
 
         [Route("[action]")]
         [Route("/")]
+        [TypeFilter(typeof(PersonsListActionFilter))]
         public IActionResult Index(string searchBy, string searchString,
         string sortBy = nameof(PersonResponse.PersonName), SortOrderOptions sortOrder = SortOrderOptions.ASC)
         {
@@ -45,14 +47,10 @@ namespace CRUDExample.Controllers
             };
 
             List<PersonResponse> persons = _personsService.GetFilteredPerson(searchBy, searchString);
-            ViewBag.CurrentSearchBy = searchBy;
-            ViewBag.CurrentSearchString = searchString;
-
+            
             //sort
             List<PersonResponse> sortedPersons = _personsService.GetSortedPersons(persons, sortBy, sortOrder);
-            ViewBag.CurrentSortBy = sortBy;
-            ViewBag.CurrentSortOrder = sortOrder.ToString();
-
+            
             return View(sortedPersons);
         }
 
