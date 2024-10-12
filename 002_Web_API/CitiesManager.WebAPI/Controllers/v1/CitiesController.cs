@@ -4,10 +4,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace CitiesManager.WebAPI.Controllers
+namespace CitiesManager.WebAPI.Controllers.v1
 {
-    [Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
+    [ApiVersion("1.0")]
     public class CitiesController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
@@ -17,7 +18,12 @@ namespace CitiesManager.WebAPI.Controllers
             _context = context;
         }
 
+        /// <summary>
+        /// To get list of cities (including city ID and city name) from 'cities' table
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
+        [Produces("application/xml")]
         public async Task<ActionResult<IEnumerable<City>>> GetCities()
         {
             if (_context.Cities == null)
