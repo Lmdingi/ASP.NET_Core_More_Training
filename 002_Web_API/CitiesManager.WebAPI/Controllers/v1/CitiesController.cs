@@ -23,7 +23,6 @@ namespace CitiesManager.WebAPI.Controllers.v1
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Produces("application/xml")]
         public async Task<ActionResult<IEnumerable<City>>> GetCities()
         {
             if (_context.Cities == null)

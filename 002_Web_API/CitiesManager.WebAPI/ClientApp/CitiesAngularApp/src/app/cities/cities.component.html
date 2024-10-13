@@ -1,0 +1,15 @@
+<table class="table w-100">
+
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>City Nmae</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let city of cities; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{city.cityName}}</td>
+        </tr>
+    </tbody>
+</table>
