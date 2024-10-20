@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Versioning.API.props" />
+</Project>

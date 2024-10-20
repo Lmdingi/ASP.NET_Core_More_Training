@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dan Tec Gaming\\Documents\\ASP.NET_Core_More_Training\\006_Versioning\\Versioning\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D269696-4304-4129-9008-0DC5D2069E0D}|Versioning.API\\Versioning.API.csproj|c:\\users\\dan tec gaming\\documents\\asp.net_core_more_training\\006_versioning\\versioning\\versioning.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D269696-4304-4129-9008-0DC5D2069E0D}|Versioning.API\\Versioning.API.csproj|solutionrelative:versioning.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D269696-4304-4129-9008-0DC5D2069E0D}|Versioning.API\\Versioning.API.csproj|c:\\users\\dan tec gaming\\documents\\asp.net_core_more_training\\006_versioning\\versioning\\versioning.api\\configureswaggeroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D269696-4304-4129-9008-0DC5D2069E0D}|Versioning.API\\Versioning.API.csproj|solutionrelative:versioning.api\\configureswaggeroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConfigureSwaggerOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Dan Tec Gaming\\Documents\\ASP.NET_Core_More_Training\\006_Versioning\\Versioning\\Versioning.API\\ConfigureSwaggerOptions.cs",
+              "RelativeDocumentMoniker": "Versioning.API\\ConfigureSwaggerOptions.cs",
+              "ToolTip": "C:\\Users\\Dan Tec Gaming\\Documents\\ASP.NET_Core_More_Training\\006_Versioning\\Versioning\\Versioning.API\\ConfigureSwaggerOptions.cs*",
+              "RelativeToolTip": "Versioning.API\\ConfigureSwaggerOptions.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:58:19.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dan Tec Gaming\\Documents\\ASP.NET_Core_More_Training\\006_Versioning\\Versioning\\Versioning.API\\Program.cs",
+              "RelativeDocumentMoniker": "Versioning.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Dan Tec Gaming\\Documents\\ASP.NET_Core_More_Training\\006_Versioning\\Versioning\\Versioning.API\\Program.cs*",
+              "RelativeToolTip": "Versioning.API\\Program.cs*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:45:03.295Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
